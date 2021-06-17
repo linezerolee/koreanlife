@@ -1,0 +1,213 @@
+/* layout */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/*  font-family: 'Noto Sans KR', sans-serif; */
+
+* { margin : 0; padding : 0; box-sizing: border-box; font-family: 'NanumSquare', sans-serif;}
+/* body { overflow: hidden;} */
+ul, ol, li { list-style: none;}
+a { text-decoration: none; }
+h1,h2,h3,h4,h5,h6 { line-height: 1.15;}
+p { font-size : 16px; color : #838383; line-height : 1.25; margin-top : 10px;}
+strong { font-size : 25px; font-weight: 700; color : #262626; line-height: 1.15;}
+
+
+@keyframes show{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showscale{
+    from {
+        opacity: 0;
+        transform : scale(0);
+    }
+    to {
+        opacity: 1;
+        transform : scale(1);
+    }
+}
+
+@keyframes showy{
+    from {
+        opacity: 0;
+        transform : translateY(70px)
+    }
+    to {
+        opacity: 1;
+        transform : translateY(0);
+    }
+}
+
+@keyframes xshow{
+    from {
+        opacity: 0;
+        transform : translateX(100px)
+    }
+    to {
+        opacity: 1;
+        transform : translateX(0);
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateY(-30px);
+    }
+    80% {
+       transform: translateY(10px);
+    }
+    100% {
+       transform: translateY(0);
+    }
+ } 
+
+/* section01 */
+
+.section01.active .title p {
+    animation : showy 0.5s;
+    animation-delay : 0.5s;
+    animation-fill-mode : both;
+}
+
+.section01.active .title h2 {
+    animation : showy 0.7s;
+    animation-delay : 0.7s;
+    animation-fill-mode : both;
+}
+
+.section01.active .sec01_left {
+    animation : show 0.6s;
+    animation-delay : 0.7s;
+    animation-fill-mode : both;
+}
+
+.section01.active .sec01_box:nth-of-type(1) {
+    animation : show 0.75s;
+    animation-delay : 0.75s;
+    animation-fill-mode : both;
+}
+
+.section01.active .sec01_box:nth-of-type(2) {
+    animation : show 0.85s;
+    animation-delay : 0.85s;
+    animation-fill-mode : both;
+}
+
+.section01.active .sec01_box:nth-of-type(3) {
+    animation : show 1s;
+    animation-delay : 1s;
+    animation-fill-mode : both;
+}
+
+/* section02 */
+
+.section02.active .row_box:nth-of-type(1),
+.section02.active .row_box:nth-of-type(2){
+    animation : showy 0.5s;
+    animation-delay : 0.5s;
+    animation-fill-mode : both;
+}
+
+.section02.active .row_box:nth-of-type(3),
+.section02.active .row_box:nth-of-type(4){
+    animation : showy 0.7s;
+    animation-delay : 0.7s;
+    animation-fill-mode : both;
+}
+
+/* section03 */
+
+.section03.active .box_half:nth-of-type(1){
+    animation : xshow 0.8s;
+    animation-delay : 0.4s;
+    animation-fill-mode : both;
+}
+
+.section03.active ul.row li.inbox:nth-of-type(1){
+    animation : bounceInUp .8s;
+    animation-delay : .7s;
+    animation-fill-mode : both;
+}
+.section03.active ul.row li.inbox:nth-of-type(2){
+    animation : bounceInUp .8s;
+    animation-delay : .75s;
+    animation-fill-mode : both;
+}
+.section03.active ul.row li.inbox:nth-of-type(3){
+    animation : bounceInUp .8s;
+    animation-delay : .85s;
+    animation-fill-mode : both;
+}
+.section03.active ul.row li.inbox:nth-of-type(4){
+    animation : bounceInUp .8s;
+    animation-delay : 1s;
+    animation-fill-mode : both;
+}
+
+/* section04 */
+
+.section04.active ul.row li.inbox:nth-of-type(1){
+    animation : showscale .8s;
+    animation-delay : .5s;
+    animation-fill-mode : both;
+}
+
+.section04.active ul.row li.inbox:nth-of-type(2){
+    animation : showscale .8s;
+    animation-delay : .65s;
+    animation-fill-mode : both;
+}
+.section04.active ul.row li.inbox:nth-of-type(3){
+    animation : showscale .8s;
+    animation-delay : .75s;
+    animation-fill-mode : both;
+}
+.section04.active ul.row li.inbox:nth-of-type(4){
+    animation : showscale .8s;
+    animation-delay : .75s;
+    animation-fill-mode : both;
+}
+
+/* section05 */
+
+.section05.active ul.row li:nth-of-type(1){
+    animation : bounceInUp .9s;
+    animation-delay : .35s;
+    animation-fill-mode : both;
+}
+.section05.active ul.row li:nth-of-type(2){
+    animation : bounceInUp 1s;
+    animation-delay : .45s;
+    animation-fill-mode : both;
+}
+.section05.active ul.row li:nth-of-type(3){
+    animation : bounceInUp 1s;
+    animation-delay : .55s;
+    animation-fill-mode : both;
+}
+.section05.active ul.row li:nth-of-type(4){
+    animation : bounceInUp 1s;
+    animation-delay : .65s;
+    animation-fill-mode : both;
+}
+.section05.active ul.row li:nth-of-type(5){
+    animation : bounceInUp 1s;
+    animation-delay : .75s;
+    animation-fill-mode : both;
+}
+.section05.active ul.row li:nth-of-type(6){
+    animation : bounceInUp 1s;
+    animation-delay : .85s;
+    animation-fill-mode : both;
+}
